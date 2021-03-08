@@ -1,24 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+
 
 //create your first component
 export function Home() {
+	const [cuenta, setCuenta] = useState(0);
+
+	//useEfffect se ejecuta luego de que react ya actiuualizó el DOM, es decir, todo lo que retorna
+	//useEffect es como un puente que nos permite sacar e introducir data de react
+
+	useEffect(() => {
+		console.log(`La cuenta es ${cuenta}`);
+		document.title = `La cuenta es ${cuenta}`;//cambia el titulo en la pestaña del navegador
+	});
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div>
+			<h1>La cuenta es: {cuenta}</h1>
+			<button onClick={() => setCuenta(cuenta + 1)}>Aumentar</button>
 		</div>
 	);
 }
