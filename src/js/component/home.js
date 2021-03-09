@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-
-
 //create your first component
 export function Home() {
 	const [cuenta, setCuenta] = useState(0);
@@ -11,7 +9,7 @@ export function Home() {
 
 	useEffect(() => {
 		console.log(`La cuenta es ${cuenta}`);
-		document.title = `La cuenta es ${cuenta}`;//cambia el titulo en la pestaña del navegador
+		document.title = `La cuenta es ${cuenta}`; //cambia el titulo en la pestaña del navegador
 	});
 	return (
 		<div>

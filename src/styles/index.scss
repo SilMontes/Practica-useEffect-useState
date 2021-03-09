@@ -1,5 +1,54 @@
 @import "~bootstrap/scss/bootstrap.scss";
-
+.cardsDiv{
+    
+    text-align: center;
+    background:  rgb(223,196,227);
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.clock{
+    display:flex;
+    width: 250px;
+    height: 80px;
+    background: #bfbfbf;
+    margin: auto;
+    font-size:43px;
+    margin-top: 20px;
+    font-weight: bold;
+   
+}
+.clock div{
+    width: 60px;
+    background: #bffcfd;
+    padding: 2px;
+    position: relative;
+     text-align: center;
+     margin: 2px;
+}
+.clock div:after{
+    font-size: 15px;
+    position: absolute;
+    bottom: -1px;
+    left:0px;
+    width: 100%;
+    text-align: center;
+    padding: 2px;
+}
+.clock .update:after{
+    content: "update";
+}
+.clock .hours:after{
+    content: "hours";
+}
+.clock .seconds:after{
+    content: "seconds";
+}
+.clock .minutes:after{
+    content: "minutes";
+}
+.clock .update i{
+    color:#bf00ff;
+}
 /* 
 
     You can write your own styles here...

@@ -9,7 +9,12 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import { Practica } from "./component/practica";
+import { Home } from "./component/home";
+//import { Practica } from "./component/practica";
+//import { PeopleCards } from "./component/peoplecards";
+//import { ClockDate } from "./component/clockdate";
 
-//render your react application
-ReactDOM.render(<Practica />, document.querySelector("#app"));
+//ReactDOM.render(<ClockDate />, document.querySelector("#app"));
+// ReactDOM.render(<PeopleCards />, document.querySelector("#app"));
+// ReactDOM.render(<Practica />, document.querySelector("#app"));
+ReactDOM.render(<Home />, document.querySelector("#app"));
